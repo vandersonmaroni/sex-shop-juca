@@ -1,10 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: Verdana;
+  font-family: verdana;
 }
 
-header{
+body{
+  height: 1366px;
+}
+
+.header {
   height: 87px;
   background-color: #C2185B;
   width: 100%;
@@ -13,11 +17,11 @@ header{
   z-index: 99;
 }
 
-.container-top{
+.container-top {
   position: relative;
 }
 
-.logo{
+.logo {
   background-image: url(img/logo.png);
   background-repeat: no-repeat;
   left: 24px;
@@ -27,12 +31,12 @@ header{
   position: absolute;
 }
 
-.selected-menu{
+.selected-menu {
   border-bottom: 4px solid #FFFFFF;
   padding-bottom: 10px;
 }
 
-nav{
+.nav {
   position: fixed;
   top: 0;
   right: 26px;
@@ -40,49 +44,50 @@ nav{
   height: 87px;
   z-index: 99;
 }
-.menu{
+
+.menu {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
   width: 50%;
   float: right;
   height: 100%;
-  line-height: 87px;
+  line-height: 77px;
 }
 
-.menu li{
+.menu li {
   padding-left: 20px;
 }
 
-.menu li a{
+.menu li a {
   text-decoration: none;
   font-style: normal;
   font-size: 20px;
   color: #FFFFFF;
 }
 
-.menu li a:hover{
+.menu li a:hover {
   border-bottom: 4px solid #FFFFFF;
   padding-bottom: 10px;
 }
 
-.separacao{
+.separacao {
   height: 87px;
   width: 100%;
 }
 
-.container-banner{
+.container-banner {
   height: 411px;
   position: relative;
 }
 
-.container-banner img{
+.container-banner img {
   width: 100%;
   position: absolute;
   height: 100%;
 }
 
-.sombra-imagem{
+.sombra-imagem {
   background-color: #000000;
   height: 100%;
   width: 100%;
@@ -91,11 +96,11 @@ nav{
   opacity: 0.2;
 }
 
-.comentario-banner{
+.comentario-banner {
   height: 100%;
 }
 
-.sombra-comentario-banner{
+.sombra-comentario-banner {
   height: 250px;
   width: 500px;
   background-color: #000000;
@@ -106,7 +111,7 @@ nav{
   bottom: 20px;
 }
 
-.titulo-banner{
+.titulo-banner {
   color: #FFFFFF;
   font-size: 22px;
   border-bottom: 4px solid #C2185B;
@@ -116,67 +121,237 @@ nav{
   margin: 0 auto;
 }
 
-.texto-banner{
+.texto-banner {
   color: #FFFFFF;
   font-size: 18px;
   padding: 30px 0px 5px;
   width: 430px;
   margin: 0 auto;
 }
-.container-body{
+.container-body {
   position: relative;
 }
 
-.container-produto, .container-servico{
-  width: auto;
+.container-produto, .container-servico,.container-contato {
   margin: 40px 40px 0 40px;
+  width: 1286px;
 }
 
-.titulo-produto{
+.titulo-produto {
   color: #FFFFFF;
   background-color: #C2185B;
-  width: 320px;
+  width: 392px;
   height: 50px;
 }
 
-.titulo-produto h2{
+.titulo-produto h2 {
   font-weight: normal;
   line-height: 50px;
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
+  font-size: 28px;
 }
 
-
-.container-grid-produto{
+.container-grid-produto {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-
-.container-grid-produto li{
-  width: 420px;
-  height: 500px;
+.container-grid-produto li {
+  width: 402px;
+  height: 403px;
   background-color: #EEEEEE;
-  border: outset;
+  box-shadow: 3px 1px 5px #777777;
+  position: relative;
 }
 
-.titulo-servico{
+.container-grid-produto li img {
+  width: auto;
+  border: 1px solid #C2185B;
+  margin: 10px 10px;
+}
+
+.container-grid-produto li h3 {
+  color: #526CFE;
+  margin: auto 10px;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.container-grid-produto li p {
+  margin: 10px 10px;
+  font-size: 18px;
+}
+
+.titulo-servico {
   color: #FFFFFF;
   background-color: #C2185B;
-  width: 340px;
+  width: 392px;
   height: 50px;
 }
 
-.titulo-servico h2{
+.titulo-servico h2 {
   font-weight: normal;
   line-height: 50px;
-  margin: 0 auto;
-  width: 300px;
+  margin: 0 10px;
+  font-size: 28px;
 }
 
-.sublinhado-titulo{
-  width: 460px;
-  border-bottom: 4px solid #C2185B;
+.sublinhado-titulo {
+  width: 486px;
+  border-bottom: 3px solid #C2185B;
+}
+
+
+.container-grid-servico {
+  list-style-type: none;
+  position: relative;
+  margin-top: 40px;
+}
+
+.container-grid-servico li {
+  position: relative;
+  background-color: #EEEEEE;
+  height: 290px;
+  margin-bottom: 40px;
+  box-shadow: 3px 1px 5px #777777;
+}
+
+.container-grid-servico li img {
+  position: absolute;
+  margin: 20px;
+}
+
+.imagem-dois img {
+  margin: 10px 20px !important;
+}
+
+.container-grid-servico li h3 {
+  position: absolute;
+  color: #526CFE;
+  font-size: 35px;
+  margin: 20px 0 20px 600px;
+  font-weight: normal;
+}
+
+.container-grid-servico li p {
+  position: absolute;
+  margin: 70px 40px 20px 600px;
+  font-size: 18px;
+  height: 200px;
+  color: #333333;
+}
+
+.separacao-containers {
+  width: 1286px;
+  border: 1px solid #526CFE;
+  margin: 35px 40px;
+}
+
+.container-contato {
+  position: relative;
+  height: 100%;
+}
+
+.titulo-contato {
+  color: #FFFFFF;
+  background-color: #C2185B;
+  width: 392px;
+  height: 50px;
+}
+
+.titulo-contato h2 {
+  font-weight: normal;
+  line-height: 50px;
+  margin: 0 20px;
+  font-size: 28px;
+}
+
+.entre-em-contato {
+  height: 447px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.campo-input {
+  width: 476px;
+  height: 58px;
+  border: 1px solid #C2185B;
+  margin-bottom: 23px;
+  box-shadow: 2px 1px 5px #777777;
+  position: relative;
+}
+
+.campo-input input {
+  font-size: 25px;
+  line-height: 58px;
+  padding-left: 20px;
+  border: 0;
+  width: 456px;
+}
+
+.campo-textarea {
+  width: 476px;
+  height: 137px;
+  border: 1px solid #C2185B;
+  margin-bottom: 23px;
+  box-shadow: 2px 1px 5px #777777;
+  position: relative;
+}
+
+.campo-textarea textarea{
+  font-size: 25px;
+  height: 137px;
+  line-height: 60px;
+  padding-left: 20px;
+  border: 0;
+  width: 456px;
+}
+
+.campo-botao {
+  width: 476px;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.btn {
+  color: #FFF;
+  font-size: 30px;
+  width: 143px;
+  height: 41px;
+  border: 0;
+  line-height: 41px;
+  background-color: #C2185B;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+.mapa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-bottom: 55px;
+}
+
+.footer {
+  height: 50px;
+  width: auto;
+  background-color: #C2185B;
+  bottom: 0;
+  position: relative;
+}
+
+.footer p {
+  font-size: 25px;
+  line-height: 50px;
+  color: #FFF;
+  margin-right: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
 }
